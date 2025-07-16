@@ -12,8 +12,9 @@ public class Services {
         Employee employee=(Employee) applicationContext.getBean("emp");
         employee.setEmpId("101");
         employee.setEmpName("Rushi");
+        employee.setEmpAddress("pimpalwandi");
 
 
-        System.out.println("EmployeeName "+employee.getEmpName()+"\n Employee Id "+employee.getEmpId());
+        System.out.println("EmployeeName "+employee.getEmpName()+"\n Employee Id "+employee.getEmpId() +"\nemp address "+employee.getEmpAddress());
     }
 }
